@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>IOLSIMULATOR vision simulator · EyeKon Medical</title>
+<meta name="description" content="EyeKon Medical designs and manufactures intraocular lenses, capsular tension rings and viscoelastics in Clearwater, Florida, for surgeons in more than 100 countries.">
+<link rel="icon" href="/assets/img/eyekon-mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Atkinson+Hyperlegible+Next:wght@400;700&family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+<div class="proposal-bar">Design proposal — not the official EyeKon Medical website</div>
+<header class="site-header">
+  <div class="wrap head-top">
+    <a class="brand" href="/" aria-label="EyeKon Medical"><img src="/assets/img/eyekon-mark.svg" alt="" width="104" height="43"><span>EyeKon</span></a>
+    <img class="ce-seal" src="/assets/img/products/ce-mdr.webp" alt="CE 0297 MDR certified" width="58" height="58">
+    <div class="head-meta">
+      <span class="fda-line">FDA approved PMMA products</span>
+      <a class="head-phone" href="tel:+18006339248"><i class="i i-phone" aria-hidden="true"></i> 800-633-9248</a>
+    </div>
+    <div class="header-tools">
+      <div class="lang" aria-label="Language">
+        <a href="/simulator.html" aria-current="true">EN</a><a href="/es/simulator.html">ES</a><a href="/pt/simulator.html">PT</a>
+      </div>
+      <button class="menu-btn" aria-expanded="false" aria-label="Menu"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14" stroke="#121826" stroke-width="2" stroke-linecap="round"/></svg></button>
+    </div>
+  </div>
+  <div class="nav-row">
+    <nav class="wrap nav" aria-label="Main">
+      <a href="/products.html">Products</a>
+      <a href="/lenses.html">Intraocular lenses</a>
+      <a href="/patients.html">For patients</a>
+      <a href="/professionals.html">Professionals</a>
+      <a href="/about.html">About</a>
+      <a href="/news.html">News</a>
+      <a href="/contact.html">Contact</a>
+      <a class="nav-sim" href="/simulator.html" aria-current="page">Vision simulator</a>
+    </nav>
+  </div>
+  <nav class="mobile-nav" aria-label="Mobile">
+    <a href="/products.html">Products</a>
+    <a href="/lenses.html">Intraocular lenses</a>
+    <a href="/simulator.html">Vision simulator</a>
+    <a href="/patients.html">For patients</a>
+    <a href="/professionals.html">Professionals</a>
+    <a href="/about.html">About</a>
+    <a href="/news.html">News</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+</header>
+<main>
+<section class="sim-band">
+  <div class="wrap split">
+    <div>
+      <h1 style="color:#fff">Show patients what they will see — before surgery.</h1>
+      <p class="lead">A virtual reality simulator that reproduces, eye by eye and in stereo, how a patient would see with each intraocular lens. The surgeon controls everything from a tablet.</p>
+      <div class="btn-row"><a class="btn btn-primary" href="/contact.html?topic=simulator">Request a demo</a><a class="btn btn-ghost" href="#try">Try it here <i class="i i-down" aria-hidden="true"></i></a></div>
+    </div>
+    <div class="compare auto" aria-hidden="true">
+      <img src="/assets/img/sim/eyekon/ventana-catarata.webp" alt="">
+      <img class="after" src="/assets/img/sim/eyekon/ventana-monofocal.webp" alt="">
+      <div class="handle"></div>
+      <span class="lbl l">Cataract</span><span class="lbl r">EyeKon Monofocal</span>
+    </div>
+  </div>
+</section>
+
+<section class="bg-sand">
+  <div class="wrap">
+    <h2>Three steps, one consultation</h2>
+    <div class="steps paper-steps mt-2">
+      <div class="step"><h3>The patient puts on the headset</h3><p class="muted">A light Meta Quest 3 headset — no cables, no setup. Each eye receives its own simulation.</p></div>
+      <div class="step"><h3>The surgeon picks the lenses</h3><p class="muted">From the tablet, choose any lens in the EyeKon catalog for each eye and switch scenes in real time.</p></div>
+      <div class="step"><h3>Patient and surgeon decide together</h3><p class="muted">Compare two lenses side by side — reading, intermediate distance and night driving with halos and glare.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sim-band" id="try">
+  <div class="wrap">
+    <h2>Compare EyeKon lenses, scene by scene</h2>
+    <p class="lead">Pick a scene and the two lenses to compare, then drag the slider. In the headset, the patient sees this in 3D all around them.</p>
+    <div class="scenes" role="group" aria-label="More scenes">
+      <button aria-pressed="true" data-scene="ventana">Cataract vs. new lens</button>
+      <button aria-pressed="false" data-scene="lectura">Reading</button>
+      <button aria-pressed="false" data-scene="living">Intermediate</button>
+      <button aria-pressed="false" data-scene="ruta">Night driving</button>
+    </div>
+    <div class="compare" id="cmp" data-names='{"catarata":"Cataract","monofocal":"EyeKon Monofocal","multifocal":"EyeKon Multifocal","edof":"EyeKon EDOF Series 2"}'>
+      <img class="before" src="/assets/img/sim/eyekon/ventana-catarata.webp" alt="">
+      <img class="after" src="/assets/img/sim/eyekon/ventana-monofocal.webp" alt="">
+      <div class="handle"></div>
+      <span class="lbl l"></span><span class="lbl r"></span>
+      <input type="range" min="0" max="100" value="50" aria-label="Comparison position">
+    </div>
+    <div class="lens-pick">
+      <label>Left: <select data-side="a"></select></label>
+      <label>Right: <select data-side="b"></select></label>
+    </div>
+    <p class="disclaimer">Simulation for educational purposes. It is not a medical device and does not replace a clinical evaluation.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <div>
+      <!-- FOTO DEL KIT PENDIENTE: reemplazar este figure por <img src="/assets/img/sim/kit.webp"> -->
+      <figure class="kit">
+        <figcaption>Meta Quest 3 · carry case · doctor's tablet</figcaption>
+        <div class="tablet"><img src="/assets/img/sim/eyekon/lectura-multifocal.webp" alt=""></div>
+        <img class="headset" src="/assets/img/sim/headset.webp" alt="Meta Quest 3">
+      </figure>
+    </div>
+    <div>
+      <h2>Everything in one case, ready in minutes</h2>
+      <ul class="checks">
+        <li>Meta Quest 3 headset with the simulator installed</li>
+        <li>Android tablet with the doctor's control app</li>
+        <li>Protective carry case for clinics and trade shows</li>
+        <li>Configured with the EyeKon lens catalog — new lenses added remotely</li>
+        <li>Works on any local Wi-Fi network; no internet needed during the session</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="bg-sand">
+  <div class="wrap">
+    <h2>One tool, three audiences</h2>
+    <div class="grid grid-3 mt-2">
+      <div class="card"><h3>In the clinic</h3><p class="muted">Patients understand the difference between lenses and choose with confidence.</p></div>
+      <div class="card"><h3>At congresses</h3><p class="muted">A memorable booth experience: surgeons try EyeKon lenses on themselves.</p></div>
+      <div class="card"><h3>For distributors</h3><p class="muted">A sales tool that turns technical specifications into something anyone can see.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap"><div class="cta">
+    <h2>Bring the simulator to your practice</h2>
+    <p>Ask for a live demo or for availability in your country.</p>
+    <div class="btn-row" style="justify-content:center"><a class="btn btn-primary" href="/contact.html?topic=simulator">Request a demo</a></div>
+    <p class="small" style="margin-top:20px;opacity:.8">Powered by IOLSIMULATOR · iolsimulator.com</p>
+  </div></div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><img src="/assets/img/eyekon-mark.svg" alt="" width="104" height="43"><span>EyeKon</span></div>
+        <p>Intraocular lenses and cataract surgery products, designed and manufactured in Clearwater, Florida since the 1980s.</p>
+        <p>2451 Enterprise Road<br>Clearwater, Florida 33763, USA</p>
+        <div class="socials" aria-label="Social"><a href="#" aria-label="LinkedIn"><i class="i i-li"></i></a><a href="#" aria-label="Facebook"><i class="i i-fb"></i></a><a href="#" aria-label="Instagram"><i class="i i-ig"></i></a><a href="#" aria-label="YouTube"><i class="i i-yt"></i></a></div>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <ul>
+          <li><a href="/lenses.html">Intraocular lenses</a></li>
+          <li><a href="/lenses.html#preloaded">Preloaded hydrophobic system</a></li>
+          <li><a href="/products.html#ctr">Capsular tension rings</a></li>
+          <li><a href="/products.html#visco">Viscoelastics</a></li>
+          <li><a href="/products.html#wipes">Eye wipes</a></li>
+          <li><a href="/simulator.html">IOLSIMULATOR</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/patients.html">For patients</a></li>
+          <li><a href="/professionals.html">Professionals</a></li>
+          <li><a href="/news.html">News</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Toll free <a href="tel:+18006339248">800-633-9248</a></li>
+          <li>Phone <a href="tel:+17277930170">+1 727-793-0170</a></li>
+          <li><a href="mailto:customerservice@eyekonmedical.com">customerservice@eyekonmedical.com</a></li>
+          <li>Mon–Fri, 8 am–5 pm EST</li>
+          <li>Hablamos español</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Eyekon Medical, Inc. · ISO 13485:2016 · FDA · CE 0297</span>
+      <span>Federal law restricts these devices to sale by or on the order of a physician.</span>
+    </div>
+  </div>
+</footer>
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-top">
+      <h1>{{home.hero.title}}</h1>
+      <div>
+        <p class="lead">{{home.hero.lead}}</p>
+        <div class="btn-row"><a class="btn btn-primary" href="{{base}}/lenses.html">{{cta.products}} <i class="i i-arrow" aria-hidden="true"></i></a></div>
+      </div>
+    </div>
+
+    <div class="trial" id="trial">
+      <div class="frame">
+        <div class="ring">
+          <div class="view"><img src="/assets/img/sim/eyekon/lectura-catarata.webp" alt="{{home.trial.altl}}"></div>
+          <span class="tab engraved">OS · <span class="ref">{{home.trial.ref}}: </span>{{lbl.cataract}}</span>
+        </div>
+        <div class="bridge" aria-hidden="true"></div>
+        <div class="ring">
+          <div class="view" id="trial-view" aria-live="polite"><img src="/assets/img/sim/eyekon/lectura-multifocal.webp" alt="{{home.trial.altr}}"></div>
+          <span class="tab engraved">OD · <b id="trial-name">{{lbl.multi}}</b></span>
+        </div>
+      </div>
+      <div class="tray" role="group" aria-label="{{home.trial.label}}">
+        <button class="trial-lens" data-lens="monofocal" aria-pressed="false"><span class="tl-ring"><i></i></span><span class="tl-tab engraved">{{lbl.mono}}</span></button>
+        <button class="trial-lens" data-lens="edof" aria-pressed="false"><span class="tl-ring"><i></i></span><span class="tl-tab engraved">{{lbl.edof}}</span></button>
+        <button class="trial-lens" data-lens="multifocal" aria-pressed="true"><span class="tl-ring"><i></i></span><span class="tl-tab engraved">{{lbl.multi}}</span></button>
+      </div>
+      <p class="trial-note">{{home.trial.note}}</p>
+    </div>
+  </div>
+</section>
+
+<div class="label-band">
+  <div class="wrap">
+    <nav class="doors" aria-label="{{home.doors.aria}}">
+      <a class="door" href="{{base}}/lenses.html"><h2>{{home.door1.k}}</h2><p>{{home.door1.d}}</p><span class="more">{{home.door1.t}} <i class="i i-arrow" aria-hidden="true"></i></span></a>
+      <a class="door" href="{{base}}/professionals.html#distribution"><h2>{{home.door2.k}}</h2><p>{{home.door2.d}}</p><span class="more">{{home.door2.t}} <i class="i i-arrow" aria-hidden="true"></i></span></a>
+      <a class="door" href="{{base}}/patients.html"><h2>{{home.door3.k}}</h2><p>{{home.door3.d}}</p><span class="more">{{home.door3.t}} <i class="i i-arrow" aria-hidden="true"></i></span></a>
+    </nav>
+    <p class="fineprint">{{home.fine}}</p>
+  </div>
+</div>
+
+<section class="velvet case">
+  <div class="wrap">
+    <h2>{{home.lines.title}}</h2>
+    <p class="lead">{{home.lines.lead}}</p>
+    <div class="slots">
+      <a class="slot" href="{{base}}/lenses.html#hydrophilic"><div class="well"><div class="ring"><div class="view"><img src="/assets/img/products/ring-hydrophilic.webp" alt="" loading="lazy"></div><span class="tab engraved">{{home.tab.hl}}</span></div></div><h3>{{lens.hl.name}}</h3><p>{{prods.hl}}</p></a>
+      <a class="slot" href="{{base}}/lenses.html#hydrophobic"><div class="well"><div class="ring"><div class="view"><img src="/assets/img/products/ring-hydrophobic.webp" alt="" loading="lazy"></div><span class="tab engraved">{{home.tab.hb}}</span></div></div><h3>{{lens.hb.name}}</h3><p>{{prods.hb}}</p></a>
+      <a class="slot" href="{{base}}/lenses.html#pmma"><div class="well"><div class="ring"><div class="view"><img src="/assets/img/products/ring-pmma.webp" alt="" loading="lazy"></div><span class="tab engraved">PMMA · <b>FDA</b></span></div></div><h3>{{lens.pm.name}}</h3><p>{{prods.pm}}</p></a>
+      <a class="slot" href="{{base}}/lenses.html#preloaded"><div class="well"><div class="ring"><div class="view"><img src="/assets/img/products/ring-preloaded.webp" alt="" loading="lazy"></div><span class="tab engraved">2.0–2.8 mm</span></div></div><h3>{{prod.preloaded.name}}</h3><p>{{prods.pl}}</p></a>
+    </div>
+    <div class="slots small">
+      <a class="slot" href="{{base}}/products.html#ctr"><div class="well"><div class="ring"><div class="view"><img src="/assets/img/products/ring-ctr.webp" alt="" loading="lazy"></div><span class="tab engraved">CTR</span></div></div><h3>{{prod.ctr.name}}</h3><p>CTR10 · CTR12, CQ PMMA</p></a>
+      <a class="slot" href="{{base}}/products.html#visco"><div class="well"><div class="ring"><div class="view"><img src="/assets/img/products/ring-visco.webp" alt="" loading="lazy"></div><span class="tab engraved">OVD</span></div></div><h3>{{prod.visco.name}}</h3><p>Visco SH · HPMC · HPMC Plus</p></a>
+      <a class="slot" href="{{base}}/products.html#wipes"><div class="well"><div class="ring"><div class="view"><img src="/assets/img/products/ring-wipes.webp" alt="" loading="lazy"></div><span class="tab engraved">Vit. E</span></div></div><h3>{{prod.wipes.name}}</h3><p>{{wipes.c3}}</p></a>
+    </div>
+    <div class="case-foot">
+      <p>{{home.case.foot}}</p>
+      <a class="btn btn-ghost" href="{{base}}/professionals.html#order">{{cta.order}} <i class="i i-arrow" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <div class="photo"><img src="/assets/img/products/clearwater.webp" alt="{{home.why.imgalt}}" loading="lazy" style="aspect-ratio:1"></div>
+    <div>
+      <h2>{{home.why.title}}</h2>
+      <p class="lead">{{home.why.lead}}</p>
+      <dl class="specs-dl">
+        <dt>{{home.dl.mat}}</dt><dd>{{home.why.c1}}</dd>
+        <dt>Natural Yellow</dt><dd>{{home.why.c2}}</dd>
+        <dt>{{home.dl.q}}</dt><dd>{{home.why.c3}}</dd>
+        <dt>{{home.card.pl.title}}</dt><dd>{{home.card.pl}}</dd>
+        <dt>{{home.dl.svc}}</dt><dd>{{home.why.c5}}</dd>
+      </dl>
+      <a class="btn btn-ghost" href="{{base}}/about.html">{{cta.about}} <i class="i i-arrow" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</section>
+
+<section class="sim-band">
+  <div class="wrap split">
+    <div>
+      <h2>{{home.sim.title}}</h2>
+      <p class="lead">{{home.sim.lead}}</p>
+      <ul class="checks"><li>{{home.sim.c1}}</li><li>{{home.sim.c2}}</li><li>{{home.sim.c3}}</li></ul>
+      <div class="btn-row"><a class="btn btn-primary" href="{{base}}/simulator.html">{{cta.discover.sim}}</a><a class="btn btn-ghost" href="{{base}}/contact.html?topic=simulator">{{cta.demo}}</a></div>
+    </div>
+    <div>
+      <div class="compare auto" role="img" aria-label="{{pat.q1.imgalt}}"><img src="/assets/img/sim/eyekon/ventana-catarata.webp" alt=""><img class="after" src="/assets/img/sim/eyekon/ventana-monofocal.webp" alt=""><div class="handle"></div><span class="lbl l">{{lbl.cataract}}</span><span class="lbl r">{{lbl.mono}}</span></div>
+      <div class="kit-badge">{{kit.powered}} <b>IOL<span>SIMULATOR</span></b></div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-sand">
+  <div class="wrap">
+    <h2>{{home.pat.title}}</h2>
+    <p class="lead">{{home.pat.lead}}</p>
+    <div class="grid grid-3 mt-2">
+      <a class="card" href="{{base}}/patients.html#cataract"><h3>{{pat.q1.title}}</h3><p class="muted">{{home.pat.c1}}</p><span class="more">{{cta.read}} <i class="i i-arrow" aria-hidden="true"></i></span></a>
+      <a class="card" href="{{base}}/patients.html#surgery"><h3>{{pat.q2.title}}</h3><p class="muted">{{home.pat.c2}}</p><span class="more">{{cta.read}} <i class="i i-arrow" aria-hidden="true"></i></span></a>
+      <a class="card" href="{{base}}/patients.html#lenses"><h3>{{pat.q3.title}}</h3><p class="muted">{{home.pat.c3}}</p><span class="more">{{cta.read}} <i class="i i-arrow" aria-hidden="true"></i></span></a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>{{home.trust.title}}</h2>
+    <div class="grid grid-3 mt-2">
+      <div class="card"><span class="sample">{{sample}}</span><p class="quote">“{{home.t1}}”</p><div class="quote-meta">{{home.t1.who}}</div></div>
+      <div class="card"><span class="sample">{{sample}}</span><p class="quote">“{{home.t2}}”</p><div class="quote-meta">{{home.t2.who}}</div></div>
+      <div class="card"><span class="sample">{{sample}}</span><p class="quote">“{{home.t3}}”</p><div class="quote-meta">{{home.t3.who}}</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="velvet">
+  <div class="wrap split">
+    <div>
+      <h2>{{home.world.title}}</h2>
+      <p>{{home.world.lead}}</p>
+      <a class="btn btn-ghost" href="{{base}}/professionals.html#distribution">{{cta.distributor}} <i class="i i-arrow" aria-hidden="true"></i></a>
+    </div>
+    <div class="chips">{{countries.chips}}</div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>{{home.news.title}}</h2>
+    <div class="grid grid-3 mt-2">{{news.cards}}</div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap"><div class="cta">
+    <h2>{{home.cta.title}}</h2>
+    <p>{{home.cta.lead}}</p>
+    <div class="btn-row" style="justify-content:center"><a class="btn btn-primary" href="{{base}}/contact.html">{{nav.contact}}</a><a class="btn btn-ghost" href="tel:+18006339248"><i class="i i-phone" aria-hidden="true"></i> 800-633-9248</a></div>
+  </div></div>
+</section>

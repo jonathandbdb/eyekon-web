@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Contact · EyeKon Medical</title>
+<meta name="description" content="EyeKon Medical designs and manufactures intraocular lenses, capsular tension rings and viscoelastics in Clearwater, Florida, for surgeons in more than 100 countries.">
+<link rel="icon" href="/assets/img/eyekon-mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Atkinson+Hyperlegible+Next:wght@400;700&family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+<div class="proposal-bar">Design proposal — not the official EyeKon Medical website</div>
+<header class="site-header">
+  <div class="wrap head-top">
+    <a class="brand" href="/" aria-label="EyeKon Medical"><img src="/assets/img/eyekon-mark.svg" alt="" width="104" height="43"><span>EyeKon</span></a>
+    <img class="ce-seal" src="/assets/img/products/ce-mdr.webp" alt="CE 0297 MDR certified" width="58" height="58">
+    <div class="head-meta">
+      <span class="fda-line">FDA approved PMMA products</span>
+      <a class="head-phone" href="tel:+18006339248"><i class="i i-phone" aria-hidden="true"></i> 800-633-9248</a>
+    </div>
+    <div class="header-tools">
+      <div class="lang" aria-label="Language">
+        <a href="/contact.html" aria-current="true">EN</a><a href="/es/contact.html">ES</a><a href="/pt/contact.html">PT</a>
+      </div>
+      <button class="menu-btn" aria-expanded="false" aria-label="Menu"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14" stroke="#121826" stroke-width="2" stroke-linecap="round"/></svg></button>
+    </div>
+  </div>
+  <div class="nav-row">
+    <nav class="wrap nav" aria-label="Main">
+      <a href="/products.html">Products</a>
+      <a href="/lenses.html">Intraocular lenses</a>
+      <a href="/patients.html">For patients</a>
+      <a href="/professionals.html">Professionals</a>
+      <a href="/about.html">About</a>
+      <a href="/news.html">News</a>
+      <a href="/contact.html" aria-current="page">Contact</a>
+      <a class="nav-sim" href="/simulator.html">Vision simulator</a>
+    </nav>
+  </div>
+  <nav class="mobile-nav" aria-label="Mobile">
+    <a href="/products.html">Products</a>
+    <a href="/lenses.html">Intraocular lenses</a>
+    <a href="/simulator.html">Vision simulator</a>
+    <a href="/patients.html">For patients</a>
+    <a href="/professionals.html">Professionals</a>
+    <a href="/about.html">About</a>
+    <a href="/news.html">News</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+</header>
+<main>
+<div class="page-head">
+  <div class="wrap">
+    <h1>Contact us</h1>
+    <p class="lead">Our team is here to help with orders, product questions and distribution. Se habla español.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap split" style="align-items:start">
+    <h2 class="sr-only">Contact</h2>
+    <form class="form card" onsubmit="event.preventDefault();this.innerHTML='<h3>Thank you — we will get back to you within one business day.</h3>'">
+      <div>
+        <label for="topic">Topic</label>
+        <select id="topic">
+          <option value="general">General question</option>
+          <option value="order">Order</option>
+          <option value="simulator">IOLSIMULATOR demo</option>
+          <option value="distribution">Distribution</option>
+          <option value="surgeon">Find a surgeon</option>
+        </select>
+      </div>
+      <div class="two"><div><label for="n">Name</label><input id="n" autocomplete="name"></div><div><label for="o">Clinic / company</label><input id="o" autocomplete="organization"></div></div>
+      <div class="two"><div><label for="e">Email</label><input id="e" type="email" autocomplete="email"></div><div><label for="c">Country</label><input id="c" autocomplete="country-name"></div></div>
+      <div><label for="m">Message</label><textarea id="m"></textarea></div>
+      <button class="btn btn-primary" type="submit" style="justify-self:start">Send message</button>
+    </form>
+    <div>
+      <div class="card" style="background:var(--sand);margin-bottom:20px">
+        <h3>Customer service</h3>
+        <p><b>Toll free</b> <a href="tel:+18006339248">800-633-9248</a><br><b>Phone</b> <a href="tel:+17277930170">+1 727-793-0170</a><br><a href="mailto:customerservice@eyekonmedical.com">customerservice@eyekonmedical.com</a></p>
+        <p class="muted small">Mon–Fri, 8 am–5 pm EST · Hablamos español</p>
+      </div>
+      <div class="card" style="margin-bottom:20px">
+        <h3>Distribution</h3>
+        <p class="muted">Interested in distributing EyeKon products in your country?</p>
+        <a href="mailto:Mark@Eyekonmedical.com">Mark@Eyekonmedical.com</a>
+      </div>
+      <div class="card">
+        <h3>Visit us</h3>
+        <p>Eyekon Medical, Inc.<br>2451 Enterprise Road<br>Clearwater, Florida 33763, USA</p>
+        <a class="more" href="https://maps.google.com/?q=2451+Enterprise+Road+Clearwater+FL+33763" rel="noopener">Open in maps <i class="i i-arrow" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  // Preselecciona el tema según ?topic= (order-*, simulator, distribution, surgeon).
+  (function(){var t=new URLSearchParams(location.search).get('topic');if(!t)return;var s=document.getElementById('topic');if(t.indexOf('order')===0)t='order';if([].some.call(s.options,function(o){return o.value===t}))s.value=t;})();
+</script>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><img src="/assets/img/eyekon-mark.svg" alt="" width="104" height="43"><span>EyeKon</span></div>
+        <p>Intraocular lenses and cataract surgery products, designed and manufactured in Clearwater, Florida since the 1980s.</p>
+        <p>2451 Enterprise Road<br>Clearwater, Florida 33763, USA</p>
+        <div class="socials" aria-label="Social"><a href="#" aria-label="LinkedIn"><i class="i i-li"></i></a><a href="#" aria-label="Facebook"><i class="i i-fb"></i></a><a href="#" aria-label="Instagram"><i class="i i-ig"></i></a><a href="#" aria-label="YouTube"><i class="i i-yt"></i></a></div>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <ul>
+          <li><a href="/lenses.html">Intraocular lenses</a></li>
+          <li><a href="/lenses.html#preloaded">Preloaded hydrophobic system</a></li>
+          <li><a href="/products.html#ctr">Capsular tension rings</a></li>
+          <li><a href="/products.html#visco">Viscoelastics</a></li>
+          <li><a href="/products.html#wipes">Eye wipes</a></li>
+          <li><a href="/simulator.html">IOLSIMULATOR</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/patients.html">For patients</a></li>
+          <li><a href="/professionals.html">Professionals</a></li>
+          <li><a href="/news.html">News</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Toll free <a href="tel:+18006339248">800-633-9248</a></li>
+          <li>Phone <a href="tel:+17277930170">+1 727-793-0170</a></li>
+          <li><a href="mailto:customerservice@eyekonmedical.com">customerservice@eyekonmedical.com</a></li>
+          <li>Mon–Fri, 8 am–5 pm EST</li>
+          <li>Hablamos español</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Eyekon Medical, Inc. · ISO 13485:2016 · FDA · CE 0297</span>
+      <span>Federal law restricts these devices to sale by or on the order of a physician.</span>
+    </div>
+  </div>
+</footer>
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>

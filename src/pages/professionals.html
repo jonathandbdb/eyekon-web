@@ -1,0 +1,76 @@
+<div class="page-head">
+  <div class="wrap">
+    <h1>{{pro.title}}</h1>
+    <p class="lead">{{pro.lead}}</p>
+    <nav class="anchor-nav"><a href="#order">{{pro.order.title}}</a><a href="#downloads">{{pro.dl.title}}</a><a href="#distribution">{{pro.dist.title}}</a><a href="#private-label">{{home.card.pl.title}}</a></nav>
+  </div>
+</div>
+
+<section id="order">
+  <div class="wrap">
+    <h2>{{pro.order.title}}</h2>
+    <p class="lead">{{pro.order.lead}}</p>
+    <div class="grid grid-3 mt-2">
+      <a class="card" href="{{base}}/contact.html?topic=order-pmma"><h3>PMMA IOL</h3><p class="muted small">{{pro.order.pmma}}</p><span class="more">{{cta.orderform}} <i class="i i-arrow" aria-hidden="true"></i></span></a>
+      <a class="card" href="{{base}}/contact.html?topic=order-acrylic"><h3>{{pro.order.acr}}</h3><p class="muted small">{{pro.order.acr.d}}</p><span class="more">{{cta.orderform}} <i class="i i-arrow" aria-hidden="true"></i></span></a>
+      <a class="card" href="{{base}}/contact.html?topic=order-ctr"><h3>{{prod.ctr.name}}</h3><p class="muted small">CTR10 · CTR12</p><span class="more">{{cta.orderform}} <i class="i i-arrow" aria-hidden="true"></i></span></a>
+      <a class="card" href="{{base}}/contact.html?topic=order-visco"><h3>{{prod.visco.name}}</h3><p class="muted small">Visco SH · HPMC · HPMC Plus</p><span class="more">{{cta.orderform}} <i class="i i-arrow" aria-hidden="true"></i></span></a>
+      <a class="card" href="{{base}}/contact.html?topic=order-wipes"><h3>{{prod.wipes.name}}</h3><p class="muted small">EyeKon EyeWipes</p><span class="more">{{cta.orderform}} <i class="i i-arrow" aria-hidden="true"></i></span></a>
+      <a class="card" href="{{base}}/contact.html?topic=order-vet"><h3>{{pro.order.vet}}</h3><p class="muted small">{{pro.order.vet.d}}</p><span class="more">{{cta.orderform}} <i class="i i-arrow" aria-hidden="true"></i></span></a>
+    </div>
+  </div>
+</section>
+
+<section class="bg-sand" id="downloads">
+  <div class="wrap split">
+    <div>
+      <h2>{{pro.dl.title}}</h2>
+      <p class="lead">{{pro.dl.lead}}</p>
+      <h3 class="mt-2">{{pro.dl.ifu}}</h3>
+      <div class="chips"><a class="chip" href="#">PMMA <i class="i i-file" aria-hidden="true"></i></a><a class="chip" href="#">{{lens.hl.short}} <i class="i i-file" aria-hidden="true"></i></a><a class="chip" href="#">{{lens.hb.short}} <i class="i i-file" aria-hidden="true"></i></a><a class="chip" href="#">CTR <i class="i i-file" aria-hidden="true"></i></a><a class="chip" href="#">{{prod.visco.name}} <i class="i i-file" aria-hidden="true"></i></a></div>
+    </div>
+    <div>
+      <h3>{{pro.dl.cat}}</h3>
+      <div class="chips"><a class="chip" href="#">EyeKon <i class="i i-file" aria-hidden="true"></i></a><a class="chip" href="#">Acuity <i class="i i-file" aria-hidden="true"></i></a><a class="chip" href="#">Acurus <i class="i i-file" aria-hidden="true"></i></a><a class="chip" href="#">Cirrus <i class="i i-file" aria-hidden="true"></i></a><a class="chip" href="#">DGR <i class="i i-file" aria-hidden="true"></i></a><a class="chip" href="#">MDR <i class="i i-file" aria-hidden="true"></i></a><a class="chip" href="#">Isotechnics <i class="i i-file" aria-hidden="true"></i></a><a class="chip" href="#">Suncoast <i class="i i-file" aria-hidden="true"></i></a></div>
+      <h3 class="mt-2">{{pro.dl.cert}}</h3>
+      <div class="chips"><span class="chip">ISO 13485:2016</span><span class="chip">CE · EU MDR 2017/745</span><span class="chip">{{pro.dl.doc}}</span><span class="chip">{{pro.dl.cfg}}</span><span class="chip">{{pro.dl.export}}</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="distribution">
+  <div class="wrap split">
+    <div>
+      <h2>{{pro.dist.title}}</h2>
+      <p class="lead">{{pro.dist.lead}}</p>
+      <ul class="checks"><li>{{pro.dist.c1}}</li><li>{{pro.dist.c2}}</li><li>{{pro.dist.c3}}</li><li>{{pro.dist.c4}}</li></ul>
+      <a class="btn btn-primary" href="{{base}}/contact.html?topic=distribution">{{cta.distributor}}</a>
+    </div>
+    <div class="card" style="background:var(--sand)">
+      <h3>{{pro.dist.terms}}</h3>
+      <p class="small">{{pro.dist.t1}}</p>
+      <p class="small">{{pro.dist.t2}}</p>
+      <p class="small">{{pro.dist.t3}}</p>
+      <p class="small muted">{{footer.rx}}</p>
+    </div>
+  </div>
+</section>
+
+<section class="bg-navy" id="private-label">
+  <div class="wrap">
+    <h2>{{home.card.pl.title}}</h2>
+    <p class="lead" style="color:#b9cce0">{{pro.pl.lead}}</p>
+    <div class="chips mt-2"><span class="chip">EyeKon</span><span class="chip">Acuity</span><span class="chip">Acurus</span><span class="chip">Cirrus</span><span class="chip">DGR</span><span class="chip">MDR</span><span class="chip">Isotechnics</span><span class="chip">Suncoast</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <div class="split-shot"><img src="/assets/img/sim/eyekon/ruta-split.webp" alt="{{scene.night}}" loading="lazy"><span class="lbl l">{{lbl.mono}}</span><span class="lbl r">{{lbl.multi}}</span></div>
+    <div>
+      <h2>{{pro.sim.title}}</h2>
+      <p>{{pro.sim.lead}}</p>
+      <a class="btn btn-primary" href="{{base}}/simulator.html">{{cta.discover.sim}}</a>
+    </div>
+  </div>
+</section>

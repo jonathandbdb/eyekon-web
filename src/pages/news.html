@@ -1,0 +1,37 @@
+<div class="page-head">
+  <div class="wrap">
+    <h1>{{news.title}}</h1>
+    <p class="lead">{{news.lead}}</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2 class="sr-only">{{nav.news}}</h2>
+    <div class="grid grid-3">{{news.cards}}</div>
+  </div>
+</section>
+
+<section class="bg-sand">
+  <div class="wrap">
+    <h2>{{news.blog.title}}</h2>
+    <div class="grid grid-3 mt-2">
+      <div class="card news-card"><span class="date">Feb 29, 2024</span><h3>Insider's Guide to Buying PMMA Intraocular Lenses Directly From the Manufacturer</h3><span class="tag">{{tag.iol}}</span></div>
+      <div class="card news-card"><span class="date">Jan 31, 2024</span><h3>The three essential questions to ask before cataract surgery</h3><span class="tag">{{nav.patients}}</span></div>
+      <div class="card news-card"><span class="date">Dec 27, 2023</span><h3>All about Light Adjustable Intraocular Lenses</h3><span class="tag">{{tag.iol}}</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap" style="max-width:760px">
+    <div class="card">
+      <h3>{{news.sub.title}}</h3>
+      <p class="muted">{{news.sub.lead}}</p>
+      <form class="form" onsubmit="event.preventDefault();this.querySelector('button').textContent='✓'">
+        <div class="two"><div><label for="nm">{{form.name}}</label><input id="nm" autocomplete="name"></div><div><label for="em">{{form.email}}</label><input id="em" type="email" autocomplete="email"></div></div>
+        <button class="btn btn-primary" type="submit" style="justify-self:start">{{news.sub.btn}}</button>
+      </form>
+    </div>
+  </div>
+</section>

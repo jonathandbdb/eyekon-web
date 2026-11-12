@@ -1,0 +1,49 @@
+<div class="page-head">
+  <div class="wrap">
+    <h1>{{contact.title}}</h1>
+    <p class="lead">{{contact.lead}}</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap split" style="align-items:start">
+    <h2 class="sr-only">{{nav.contact}}</h2>
+    <form class="form card" onsubmit="event.preventDefault();this.innerHTML='<h3>{{contact.thanks}}</h3>'">
+      <div>
+        <label for="topic">{{form.topic}}</label>
+        <select id="topic">
+          <option value="general">{{form.t.general}}</option>
+          <option value="order">{{form.t.order}}</option>
+          <option value="simulator">{{form.t.sim}}</option>
+          <option value="distribution">{{form.t.dist}}</option>
+          <option value="surgeon">{{form.t.surgeon}}</option>
+        </select>
+      </div>
+      <div class="two"><div><label for="n">{{form.name}}</label><input id="n" autocomplete="name"></div><div><label for="o">{{form.org}}</label><input id="o" autocomplete="organization"></div></div>
+      <div class="two"><div><label for="e">{{form.email}}</label><input id="e" type="email" autocomplete="email"></div><div><label for="c">{{form.country}}</label><input id="c" autocomplete="country-name"></div></div>
+      <div><label for="m">{{form.msg}}</label><textarea id="m"></textarea></div>
+      <button class="btn btn-primary" type="submit" style="justify-self:start">{{form.send}}</button>
+    </form>
+    <div>
+      <div class="card" style="background:var(--sand);margin-bottom:20px">
+        <h3>{{contact.cs}}</h3>
+        <p><b>{{footer.toll}}</b> <a href="tel:+18006339248">800-633-9248</a><br><b>{{footer.phone}}</b> <a href="tel:+17277930170">+1 727-793-0170</a><br><a href="mailto:customerservice@eyekonmedical.com">customerservice@eyekonmedical.com</a></p>
+        <p class="muted small">{{footer.hours}} · {{footer.spanish}}</p>
+      </div>
+      <div class="card" style="margin-bottom:20px">
+        <h3>{{pro.dist.title}}</h3>
+        <p class="muted">{{contact.dist}}</p>
+        <a href="mailto:Mark@Eyekonmedical.com">Mark@Eyekonmedical.com</a>
+      </div>
+      <div class="card">
+        <h3>{{contact.visit}}</h3>
+        <p>Eyekon Medical, Inc.<br>2451 Enterprise Road<br>Clearwater, Florida 33763, USA</p>
+        <a class="more" href="https://maps.google.com/?q=2451+Enterprise+Road+Clearwater+FL+33763" rel="noopener">{{contact.map}} <i class="i i-arrow" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  // Preselecciona el tema según ?topic= (order-*, simulator, distribution, surgeon).
+  (function(){var t=new URLSearchParams(location.search).get('topic');if(!t)return;var s=document.getElementById('topic');if(t.indexOf('order')===0)t='order';if([].some.call(s.options,function(o){return o.value===t}))s.value=t;})();
+</script>

@@ -1,0 +1,109 @@
+<div class="page-head">
+  <div class="wrap">
+    <h1>{{lens.title}}</h1>
+    <p class="lead">{{lens.lead}}</p>
+    <nav class="anchor-nav">
+      <a href="#hydrophilic">{{lens.hl.name}}</a><a href="#hydrophobic">{{lens.hb.name}}</a><a href="#pmma">PMMA</a><a href="#preloaded">{{prod.preloaded.name}}</a>
+    </nav>
+  </div>
+</div>
+
+<div class="wrap">
+  <article class="prod-block" id="hydrophilic">
+    <div class="split">
+      <div>
+        <span class="tag">CE 0297 · EU MDR</span><span class="tag warn">{{notus}}</span>
+        <h2>{{lens.hl.name}}</h2>
+        <p>{{lens.hl.d}}</p>
+        <ul class="checks"><li>{{lens.hl.c1}}</li><li>{{lens.hl.c2}}</li><li>{{lens.hl.c3}}</li><li>{{lens.hl.c4}}</li></ul>
+        <p class="muted small">{{lens.hl.ny}}</p>
+      </div>
+      <div class="prod-media"><img src="/assets/img/products/sheet-hydrophilic.webp" alt="{{lens.hl.name}}" loading="lazy"></div>
+    </div>
+    <h3 class="mt-2">{{lens.models}}</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>{{th.model}}</th><th>{{th.series}}</th><th>{{th.design}}</th><th>{{th.optic}}</th><th>{{th.aconst}}</th><th>{{th.acd}}</th></tr></thead>
+      <tbody>
+        <tr><td><span class="swatch c"></span><b>MICTF-4</b> · <span class="swatch y"></span><b>MICTF-4Y</b></td><td>EDOF 3</td><td>{{lens.d.plate}} · 5° · {{lens.d.addhi}}</td><td>6.0 / 11.0 mm</td><td>118.0</td><td>5.3</td></tr>
+        <tr><td><span class="swatch c"></span><b>EQ624</b> · <span class="swatch y"></span><b>EQ624 NY</b></td><td>EDOF 2</td><td>{{lens.d.modc}} · 5° · {{lens.d.add4}}</td><td>6.0 / 12.5 mm</td><td>118.2</td><td>4.65</td></tr>
+        <tr><td><span class="swatch c"></span><b>EA55A</b> · <span class="swatch y"></span><b>EA55A NY</b></td><td>{{lens.s.accom}}</td><td>{{lens.d.plate}} · {{lens.d.dvault}}</td><td>5.5 / 12.0 mm</td><td>118.0</td><td>4.65</td></tr>
+      </tbody>
+    </table></div>
+    <p class="small muted mt-2">{{lens.yellowkey}}</p>
+  </article>
+
+  <article class="prod-block" id="hydrophobic">
+    <div class="split rev">
+      <div>
+        <span class="tag warn">{{notus}}</span>
+        <h2>{{lens.hb.name}}</h2>
+        <p>{{lens.hb.d}}</p>
+        <ul class="checks"><li>{{lens.hb.c1}}</li><li>{{lens.hb.c2}}</li><li>{{lens.hb.c3}}</li></ul>
+      </div>
+      <div class="prod-media"><img src="/assets/img/products/sheet-hydrophobic.webp" alt="{{lens.hb.name}}" loading="lazy"></div>
+    </div>
+    <h3 class="mt-2">{{lens.models}}</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>{{th.model}}</th><th>{{th.series}}</th><th>{{th.design}}</th><th>{{th.optic}}</th><th>{{th.aconst}}</th><th>{{th.acd}}</th></tr></thead>
+      <tbody>
+        <tr><td><span class="swatch c"></span><b>HB60-OUV</b> · <span class="swatch y"></span><b>HY60-OUV</b></td><td>{{lens.s.mono}}</td><td>{{lens.d.bimodc}} · 0°</td><td>6.0 / 12.5 mm</td><td>118.5</td><td>5.6</td></tr>
+        <tr><td><span class="swatch c"></span><b>HB60-BF</b> · <span class="swatch y"></span><b>HB60BF-NY</b></td><td>EDOF 2</td><td>{{lens.d.bimodc}} · {{lens.d.add4}}</td><td>6.0 / 12.5 mm</td><td>118.5</td><td>5.6</td></tr>
+        <tr><td><span class="swatch c"></span><b>HB60-TF</b> · <span class="swatch y"></span><b>HB60TF-NY</b></td><td>EDOF 3</td><td>{{lens.d.bimodc}} · {{lens.d.addhi}}</td><td>6.0 / 12.5 mm</td><td>118.5</td><td>5.6</td></tr>
+      </tbody>
+    </table></div>
+  </article>
+
+  <article class="prod-block" id="pmma">
+    <div class="split">
+      <div>
+        <span class="tag">FDA</span>
+        <h2>{{lens.pm.name}}</h2>
+        <p>{{lens.pm.d}}</p>
+        <ul class="checks"><li>{{lens.pm.c1}}</li><li>{{lens.pm.c2}}</li><li>{{lens.pm.c3}}</li></ul>
+      </div>
+      <div class="prod-media"><img src="/assets/img/products/sheet-pmma.webp" alt="{{lens.pm.name}}" loading="lazy"></div>
+    </div>
+    <h3 class="mt-2">{{lens.models}}</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>{{th.model}}</th><th>{{th.oal}}</th><th>{{th.optic}}</th><th>{{th.design}}</th><th>{{th.power}}</th><th>{{th.aconst}}</th></tr></thead>
+      <tbody>
+        <tr><td><b>S101</b></td><td>12.00</td><td>5.0</td><td>Co-convex · catenary 3.5°</td><td>10.00 – 30.00</td><td>118.2</td></tr>
+        <tr><td><b>S102 / S102-2</b></td><td>13.00</td><td>6.0</td><td>Bi-convex · step vault</td><td>10.00 – 30.00</td><td>118.2</td></tr>
+        <tr><td><b>S103-2</b></td><td>12.50</td><td>6.5</td><td>Co-convex · catenary 3.5°</td><td>-5.00 – 30.00</td><td>118.2</td></tr>
+        <tr><td><b>S104</b></td><td>12.50</td><td>6.5</td><td>Co-convex · catenary 3.5° · 2 suture holes</td><td>10.00 – 30.00</td><td>118.2</td></tr>
+        <tr><td><b>S106 / S106-2</b></td><td>12.50</td><td>6.0</td><td>Bi-convex · step vault</td><td>-5.00 – 30.00</td><td>118.2</td></tr>
+        <tr><td><b>S110 / S110-2</b></td><td>13.50</td><td>6.5</td><td>Bi-convex · step vault 2.5°</td><td>-5.00 – 30.00</td><td>118.2</td></tr>
+        <tr><td><b>S116</b></td><td>12.50</td><td>5.5</td><td>Co-convex · catenary 3.5°</td><td>-5.00 – 30.00</td><td>118.2</td></tr>
+        <tr><td><b>S118</b></td><td>12.00</td><td>5.5</td><td>Co-convex · catenary 3.5°</td><td>10.00 – 30.00</td><td>118.2</td></tr>
+        <tr><td><b>S120 · S121</b></td><td>12.00 / 12.50</td><td>5.5</td><td>Co-convex</td><td>10.00 – 30.00</td><td>118.0</td></tr>
+        <tr><td><b>EK401</b> · {{lens.s.premium}}</td><td>12.50</td><td>5.5</td><td>PL-convex · foot plate · step vault</td><td>10.00 – 30.00</td><td>115.1</td></tr>
+        <tr><td><b>P125 / P130</b> · {{lens.ac}}</td><td>12.50 / 13.00</td><td>6.0</td><td>PL-convex · foot plate · step vault</td><td>10.00 – 30.00</td><td>115.1</td></tr>
+      </tbody>
+    </table></div>
+    <p class="small muted mt-2">{{lens.aconst.note}}</p>
+  </article>
+
+  <article class="prod-block" id="preloaded">
+    <div class="split rev">
+      <div>
+        <span class="tag">{{tag.new}}</span>
+        <h2>{{prod.preloaded.name}}</h2>
+        <p>{{lens.pl.d}}</p>
+        <div class="specs">
+          <div class="spec"><b>2.0 – 2.8 mm</b><span>{{lens.pl.s1}}</span></div>
+          <div class="spec"><b>10.0 – 30.0 D</b><span>{{lens.pl.s2}}</span></div>
+          <div class="spec"><b>{{lens.pl.s3v}}</b><span>{{lens.pl.s3}}</span></div>
+        </div>
+      </div>
+      <div class="prod-media"><img src="/assets/img/products/preloaded.webp" alt="{{prod.preloaded.name}}" loading="lazy"></div>
+    </div>
+  </article>
+</div>
+
+<section class="sim-band">
+  <div class="wrap center">
+    <h2>{{lens.simcta.title}}</h2>
+    <p class="lead">{{lens.simcta.lead}}</p>
+    <div class="btn-row" style="justify-content:center"><a class="btn btn-primary" href="{{base}}/simulator.html">{{cta.discover.sim}}</a><a class="btn btn-ghost" href="{{base}}/professionals.html#downloads">{{cta.ifu}}</a></div>
+  </div>
+</section>

@@ -1,0 +1,15 @@
+# Material recibido por WhatsApp (simulaciones de la competencia): no se publica
+media/raw/
+# Extracciones y hojas de contacto temporales
+media/frames/
+media/list.txt
+media/sheet.jpg
+# Catálogo EyeKon bajado del backend de IOLSIMULATOR (dato interno)
+brief/eyekon-catalogo.json
+# Artefactos locales de impeccable
+.impeccable/review/
+.impeccable/detect*.json
+.impeccable/direction-round.json
+.impeccable/brief-home.md
+.vercel/
+__pycache__/

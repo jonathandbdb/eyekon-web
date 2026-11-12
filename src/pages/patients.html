@@ -1,0 +1,75 @@
+<div class="page-head">
+  <div class="wrap">
+    <h1>{{pat.title}}</h1>
+    <p class="lead">{{pat.lead}}</p>
+    <nav class="anchor-nav"><a href="#cataract">{{pat.q1.title}}</a><a href="#surgery">{{pat.q2.title}}</a><a href="#lenses">{{pat.q3.title}}</a><a href="#faq">{{pat.faq.title}}</a></nav>
+  </div>
+</div>
+
+<section id="cataract">
+  <div class="wrap split">
+    <div>
+      <h2>{{pat.q1.title}}</h2>
+      <p>{{pat.q1.p1}}</p>
+      <p>{{pat.q1.p2}}</p>
+      <ul class="checks"><li>{{pat.q1.c1}}</li><li>{{pat.q1.c2}}</li><li>{{pat.q1.c3}}</li><li>{{pat.q1.c4}}</li></ul>
+    </div>
+    <div class="compare auto" role="img" aria-label="{{pat.q1.imgalt}}"><img src="/assets/img/sim/eyekon/ventana-catarata.webp" alt=""><img class="after" src="/assets/img/sim/eyekon/ventana-monofocal.webp" alt=""><div class="handle"></div><span class="lbl l">{{lbl.cataract}}</span><span class="lbl r">{{lbl.after}}</span></div>
+  </div>
+</section>
+
+<section class="bg-sand" id="surgery">
+  <div class="wrap">
+    <h2>{{pat.q2.title}}</h2>
+    <p class="lead">{{pat.q2.lead}}</p>
+    <div class="steps mt-2">
+      <div class="step"><h3>{{pat.s1.t}}</h3><p class="muted">{{pat.s1.d}}</p></div>
+      <div class="step"><h3>{{pat.s2.t}}</h3><p class="muted">{{pat.s2.d}}</p></div>
+      <div class="step"><h3>{{pat.s3.t}}</h3><p class="muted">{{pat.s3.d}}</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="lenses">
+  <div class="wrap">
+    <h2>{{pat.q3.title}}</h2>
+    <p class="lead">{{pat.q3.lead}}</p>
+    <div class="grid grid-4 mt-2">
+      <div class="card"><h3>{{pat.l1.t}}</h3><p class="muted">{{pat.l1.d}}</p></div>
+      <div class="card"><h3>{{pat.l2.t}}</h3><p class="muted">{{pat.l2.d}}</p></div>
+      <div class="card"><h3>{{pat.l3.t}}</h3><p class="muted">{{pat.l3.d}}</p></div>
+      <div class="card"><h3>{{pat.l4.t}}</h3><p class="muted">{{pat.l4.d}}</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sim-band">
+  <div class="wrap split">
+    <div>
+      <h2>{{pat.sim.title}}</h2>
+      <p class="lead">{{pat.sim.lead}}</p>
+      <a class="btn btn-primary" href="{{base}}/simulator.html">{{cta.discover.sim}}</a>
+    </div>
+    <div class="split-shot"><img src="/assets/img/sim/eyekon/lectura-split.webp" alt="{{scene.near}}" loading="lazy"><span class="lbl l">{{lbl.mono}}</span><span class="lbl r">{{lbl.multi}}</span></div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap" style="max-width:860px">
+    <h2>{{pat.faq.title}}</h2>
+    <details><summary>{{pat.f1.q}}</summary><p>{{pat.f1.a}}</p></details>
+    <details><summary>{{pat.f2.q}}</summary><p>{{pat.f2.a}}</p></details>
+    <details><summary>{{pat.f3.q}}</summary><p>{{pat.f3.a}}</p></details>
+    <details><summary>{{pat.f4.q}}</summary><p>{{pat.f4.a}}</p></details>
+    <details><summary>{{pat.f5.q}}</summary><p>{{pat.f5.a}}</p></details>
+    <p class="small muted mt-2">{{pat.medical}}</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap"><div class="cta">
+    <h2>{{pat.find.title}}</h2>
+    <p>{{pat.find.lead}}</p>
+    <div class="btn-row" style="justify-content:center"><a class="btn btn-primary" href="{{base}}/contact.html?topic=surgeon">{{pat.find.btn}}</a></div>
+  </div></div>
+</section>

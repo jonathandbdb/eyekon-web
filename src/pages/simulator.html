@@ -1,0 +1,94 @@
+<section class="sim-band">
+  <div class="wrap split">
+    <div>
+      <h1 style="color:#fff">{{sim.title}}</h1>
+      <p class="lead">{{sim.lead}}</p>
+      <div class="btn-row"><a class="btn btn-primary" href="{{base}}/contact.html?topic=simulator">{{cta.demo}}</a><a class="btn btn-ghost" href="#try">{{sim.try}} <i class="i i-down" aria-hidden="true"></i></a></div>
+    </div>
+    <div class="compare auto" aria-hidden="true">
+      <img src="/assets/img/sim/eyekon/ventana-catarata.webp" alt="">
+      <img class="after" src="/assets/img/sim/eyekon/ventana-monofocal.webp" alt="">
+      <div class="handle"></div>
+      <span class="lbl l">{{lbl.cataract}}</span><span class="lbl r">{{lbl.mono}}</span>
+    </div>
+  </div>
+</section>
+
+<section class="bg-sand">
+  <div class="wrap">
+    <h2>{{sim.how.title}}</h2>
+    <div class="steps paper-steps mt-2">
+      <div class="step"><h3>{{sim.s1.t}}</h3><p class="muted">{{sim.s1.d}}</p></div>
+      <div class="step"><h3>{{sim.s2.t}}</h3><p class="muted">{{sim.s2.d}}</p></div>
+      <div class="step"><h3>{{sim.s3.t}}</h3><p class="muted">{{sim.s3.d}}</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sim-band" id="try">
+  <div class="wrap">
+    <h2>{{sim.try.title}}</h2>
+    <p class="lead">{{sim.try.lead}}</p>
+    <div class="scenes" role="group" aria-label="{{sim.scenes.title}}">
+      <button aria-pressed="true" data-scene="ventana">{{scene.cataract}}</button>
+      <button aria-pressed="false" data-scene="lectura">{{scene.near}}</button>
+      <button aria-pressed="false" data-scene="living">{{scene.inter}}</button>
+      <button aria-pressed="false" data-scene="ruta">{{scene.night}}</button>
+    </div>
+    <div class="compare" id="cmp" data-names='{"catarata":"{{lbl.cataract}}","monofocal":"{{lbl.mono}}","multifocal":"{{lbl.multi}}","edof":"{{lbl.edof}}"}'>
+      <img class="before" src="/assets/img/sim/eyekon/ventana-catarata.webp" alt="">
+      <img class="after" src="/assets/img/sim/eyekon/ventana-monofocal.webp" alt="">
+      <div class="handle"></div>
+      <span class="lbl l"></span><span class="lbl r"></span>
+      <input type="range" min="0" max="100" value="50" aria-label="{{sim.try.slider}}">
+    </div>
+    <div class="lens-pick">
+      <label>{{sim.left}} <select data-side="a"></select></label>
+      <label>{{sim.right}} <select data-side="b"></select></label>
+    </div>
+    <p class="disclaimer">{{sim.disclaimer}}</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <div>
+      <!-- FOTO DEL KIT PENDIENTE: reemplazar este figure por <img src="/assets/img/sim/kit.webp"> -->
+      <figure class="kit">
+        <figcaption>Meta Quest 3 · {{kit.case}} · {{kit.tablet}}</figcaption>
+        <div class="tablet"><img src="/assets/img/sim/eyekon/lectura-multifocal.webp" alt=""></div>
+        <img class="headset" src="/assets/img/sim/headset.webp" alt="Meta Quest 3">
+      </figure>
+    </div>
+    <div>
+      <h2>{{sim.kit.title}}</h2>
+      <ul class="checks">
+        <li>{{sim.kit.c1}}</li>
+        <li>{{sim.kit.c2}}</li>
+        <li>{{sim.kit.c3}}</li>
+        <li>{{sim.kit.c4}}</li>
+        <li>{{sim.kit.c5}}</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="bg-sand">
+  <div class="wrap">
+    <h2>{{sim.where.title}}</h2>
+    <div class="grid grid-3 mt-2">
+      <div class="card"><h3>{{sim.w1.t}}</h3><p class="muted">{{sim.w1.d}}</p></div>
+      <div class="card"><h3>{{sim.w2.t}}</h3><p class="muted">{{sim.w2.d}}</p></div>
+      <div class="card"><h3>{{sim.w3.t}}</h3><p class="muted">{{sim.w3.d}}</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap"><div class="cta">
+    <h2>{{sim.cta.title}}</h2>
+    <p>{{sim.cta.lead}}</p>
+    <div class="btn-row" style="justify-content:center"><a class="btn btn-primary" href="{{base}}/contact.html?topic=simulator">{{cta.demo}}</a></div>
+    <p class="small" style="margin-top:20px;opacity:.8">{{kit.powered}} IOLSIMULATOR · iolsimulator.com</p>
+  </div></div>
+</section>
