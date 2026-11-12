@@ -391,5 +391,8 @@
  "home.case.foot": "Every EyeKon lens is lathe-cut and inspected in our own plant. Orders by model, diopter and PO.",
  "home.dl.mat": "Material",
  "home.dl.q": "Quality",
- "home.dl.svc": "Service"
+ "home.dl.svc": "Service",
+ "lbl.mono.s": "Monofocal",
+ "lbl.edof.s": "EDOF Series 2",
+ "lbl.multi.s": "Multifocal"
 }

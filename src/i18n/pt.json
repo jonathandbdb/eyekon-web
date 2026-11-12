@@ -386,5 +386,8 @@
  "home.case.foot": "Cada lente EyeKon é torneada e inspecionada na nossa própria fábrica. Pedidos por modelo, dioptria e ordem de compra.",
  "home.dl.mat": "Material",
  "home.dl.q": "Qualidade",
- "home.dl.svc": "Atendimento"
+ "home.dl.svc": "Atendimento",
+ "lbl.mono.s": "Monofocal",
+ "lbl.edof.s": "EDOF Série 2",
+ "lbl.multi.s": "Multifocal"
 }

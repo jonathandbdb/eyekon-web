@@ -83,7 +83,7 @@
         requestAnimationFrame(function () { img.className = ''; old.className = 'out'; });
         setTimeout(function () { if (old.parentNode) old.parentNode.removeChild(old); }, 800);
       };
-      name.textContent = c.querySelector('.tl-tab').textContent;
+      name.textContent = c.querySelector('.tl-tab').getAttribute('data-full');
     });
   });
 })();
