@@ -20,3 +20,12 @@ Rediseño completo de eyekonmedical.com + sección IOLSIMULATOR. Sitio estático
 
 ## Contenido marcado como ejemplo
 Testimonios y 2 de las 3 novedades llevan la etiqueta "Sample content": reemplazar con material real del cliente.
+
+## Variante "sitio actual + IOLSIMULATOR" (`site-actual/`)
+Copia fiel de la home de eyekonmedical.com (bajada con wget, sin el tracker de estadísticas) con una
+sección IOLSIMULATOR insertada entre "Intraocular Lens Manufacturer" y "Customer Service".
+- Sección: `site-actual/iolsimulator/` (CSS/JS propios con prefijo `iols-`, fotos, video comprimido).
+- Los links del menú apuntan a las páginas reales de eyekonmedical.com.
+- Foto del kit: `tools/compose.py` (recorte con rembg + fondo de estudio + pantalla de tablet
+  generada desde `tools/screen.html`). Re-clonar assets: `tools/localize_clone.py`.
+- Ver local: `cd site-actual && python3 -m http.server 8790`. Deploy: `cd site-actual && npx vercel --prod`.
